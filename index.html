@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Greeter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Time Greeter</h1>
+        <input type="text" id="nameInput" placeholder="Enter your name" />
+        <button id="greetButton">Get Greeting</button>
+        <button id="resetButton">Reset</button>
+        <label for="bgColorPicker">Choose Background Color:</label>
+        <input type="color" id="bgColorPicker" value="#ffffff" />
+        <div id="currentTime" class="time"></div>
+        <div id="greetingMessage" class="greeting"></div>
+        <div id="quoteMessage" class="quote"></div>
+        <svg id="svgIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" class="hidden">
+            <circle cx="50" cy="50" r="40" fill="#3498db" />
+            <text x="50%" y="50%" text-anchor="middle" stroke="#ffffff" stroke-width="1px" dy=".3em">👋</text>
+        </svg>
+    </div>
+    <audio id="greetingSound" src="greeting.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
